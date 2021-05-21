@@ -1,0 +1,149 @@
+body {
+  font-family: cursive;
+  color: aqua;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+footer a {
+  color: #40a8c4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #07689f;
+  text-decoration: none;
+}
+
+.container {
+  padding: 30px 0px 0px;
+}
+
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ca1661;
+  background: linear-gradient(
+    96.2deg,
+    rgb(255, 230, 112) 10.4%,
+    rgb(255, 100, 100) 43.8%,
+    rgb(0, 93, 219) 105.8%
+  );
+}
+
+.card-header {
+  text-align: center;
+  font-size: small;
+  background: none;
+  border-style: none;
+}
+
+.loadWeather {
+  padding: 10px 60px 10px 60px;
+  background: #ffffff25;
+  border-radius: 15px;
+}
+
+.currentWeather {
+  text-align: center;
+}
+
+.city {
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 20px;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.units {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  bottom: 20px;
+}
+
+.weather-amp {
+  font-size: small;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 20px;
+}
+
+.dailyweather {
+  font-size: small;
+  position: relative;
+  top: 20px;
+}
+
+.searchForm {
+  padding: 10px;
+}
+
+.forecast-temp {
+  text-align: center;
+  font-size: small;
+  white-space: nowrap;
+}
+
+.forecast-icon img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.forecast-week {
+  background: rgba(255, 255, 255, 0.041);
+  border-radius: 10px;
+  margin: 1px 8px 5px;
+  padding: 10px;
+  border-style: none;
+}
+
+.forecast .card-header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: #536488;
+  border: #536488;
+}
+
+.btn-secondary:hover {
+  background: #37425a;
+  border: #37425a;
+}
+
+.errorMsg {
+  font-size: small;
+}

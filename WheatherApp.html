@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ebd6470ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-header" id="timestamp"></div>
+
+          <section class="loadWeather">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <div class="currentWeather">
+                  <img src="" class="mainIcon" id="weather-icon" />
+                  <br />
+                  <span class="city" id="city"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-6">
+                <div class="float-left">
+                  <span class="temperature" id="temperature"></span
+                  ><span class="units" id="units-main"></span>
+                  <br />
+                  <span class="weather-amp" id="weather-amp"></span>
+                </div>
+              </div>
+              <div class="col-auto mr-ml-auto">
+                <span class="dailyweather" id="daily-weather">
+                  <ul>
+                    <li>
+                      <i class="fas fa-thermometer-half"></i> Feels like:
+                      <span id="feels-like"></span>
+                    </li>
+                    <li>
+                      <i class="fas fa-tint"></i> Humidity:
+                      <span id="humidity"></span>%
+                    </li>
+                    <li>
+                      <i class="fas fa-wind"></i> Wind:
+                      <span id="wind-speed"></span>
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section class="searchForm">
+            <span class="errorMsg" id="error-msg"></span>
+            <form id="search-form">
+              <div class="form-row">
+                <div class="col">
+                  <input
+                    type="text"
+                    placeholder="Change city"
+                    autocomplete="off"
+                    class="form-control form-control-sm"
+                    id="search-city"
+                  />
+                </div>
+                <div class="col-auto">
+                  <div class="btn-group">
+                    <button type="submit" class="btn btn-secondary btn-sm">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      id="user-location"
+                    >
+                      <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      id="celsius"
+                    >
+                      <a href="#">°C</a>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      id="fahrenheit"
+                    >
+                      <a href="#">°F</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="forecast">
+            <div class="card-header">Weekly 5 day forecast</div>
+            <div
+              class="row row-cols-1 row-cols-md-6 justify-content-center"
+              id="forecast"
+            ></div>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <small>
+          <a herf="https://github.com/AshleyColter/Weather-App-project";
+          target="_blank"
+          >Open-source code</a>
+          by Ashley Colter
+        </small>
+<script src="src/index.js"></script>
+</body>
+</html>
